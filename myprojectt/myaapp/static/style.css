@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fffaf5;
+  color: #333;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff7b00;
+  padding: 1rem 2rem;
+}
+
+nav h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* HERO SECTION */
+.hero {
+  background: url('images/restaurant.jpg') center/cover no-repeat;
+  height: 80vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background: white;
+  color: #ff7b00;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #ff7b00;
+  color: white;
+}
+
+/* MENU PAGE */
+.menu {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.menu h2 {
+  color: #ff7b00;
+  margin-bottom: 40px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.menu-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.menu-item h3 {
+  color: #ff7b00;
+  margin-top: 10px;
+}
+
+/* ADMINISTRATION PAGE */
+.admin {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff3e0;
+}
+
+.admin h2 {
+  color: #ff7b00;
+  margin-bottom: 30px;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.admin-card {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.admin-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.admin-card h3 {
+  margin: 10px 0 5px;
+  color: #ff7b00;
+}
+
+.admin-card p {
+  color: #555;
+  font-weight: 500;
+}
+
+/* CONTACT + FOOTER */
+.contact {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer {
+  background: #ff7b00;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
